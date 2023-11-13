@@ -9,7 +9,7 @@ export const PageAuth = () => {
             <input placeholder='Логин' />
             <input type='password' placeholder="Пароль"/>
             <button>Вход</button>
-            <a href='#'>Создать аккаунт</a>
+            <a href='/reg'>Создать аккаунт</a>
         </Form>
     );
 };

@@ -1,0 +1,16 @@
+h1{
+    color: black;
+    text-align: center;
+}
+.link{
+    text-decoration: none;
+    color: black;
+    margin: auto auto;
+}
+.link > div{
+    width: fit-content;
+    padding: 0.5%;
+}
+.links_container{
+    display:grid;
+}
