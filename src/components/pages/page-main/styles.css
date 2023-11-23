@@ -1,0 +1,24 @@
+h1{
+    color: black;
+    text-align: center;
+}
+.link{
+    text-decoration: none;
+    color: black;
+    margin: auto auto;
+}
+.link > div{
+    width: fit-content;
+    padding: 0.5%;
+}
+.links_container{
+    display:grid;
+}
+.form-wrapper{
+    top: 0px;
+    position: absolute;
+    padding: 3%;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(10px);
+}

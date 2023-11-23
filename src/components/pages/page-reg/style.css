@@ -1,3 +1,22 @@
-
-
-
+.checkbox-wrong > p{
+    color: red;
+    text-decoration:double;
+}
+.password-matching-text{
+    display: none;
+}
+.password-not-matching-text
+{
+    display: block;
+    color: red;
+}
+.password-not-matching-input{
+    color: red;
+}
+.form{
+    position: absolute;
+    justify-self: center;
+    left: 0;
+    right: 0;
+    transition: 3000ms;
+}
