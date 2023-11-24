@@ -12,8 +12,6 @@ export const Navigation = () =>
         <div>
         <BrowserRouter>
             <Routes>
-                <Route path="auth" element={<PageAuth/>} />
-                <Route path="reg" element={<PageReg />} />
                 <Route path="/" element={<PageMain />} />
                 <Route path="profile" element={<PageProfile />} />
                 <Route path="*" element={<PageNotFound />} /> 

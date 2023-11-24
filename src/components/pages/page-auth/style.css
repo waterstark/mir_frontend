@@ -1,1 +1,8 @@
-
+.login-valid{
+    display: none;
+}
+.login-not-valid
+{
+    display: block;
+    color: red;
+}

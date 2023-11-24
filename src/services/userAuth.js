@@ -18,4 +18,17 @@ export default class AuthService
             console.log(error)
         })
     }
+    static async login(mail, pass)
+    {
+        await $api
+        .post('auth/login', "grant_type=&username=" + mail + "&password=" + pass + "&scope=&client_id=&client_secret=")
+        .then (function (response)
+        {
+            return 0;
+        })
+        .catch (function (error) 
+        {
+            return error;
+        })
+    }
 }
