@@ -15,7 +15,7 @@ import AuthService from '../../../services/userAuth'
 // 00100000 - mail err (32)
 // 01000000 - username error (64)
 
-export const PageReg = () => {
+export const PageReg = ({onExitClick}) => {
 
     const [passinp, setPassinp] = useState('');
     const [passrep, setPassrep] = useState('');
@@ -25,7 +25,9 @@ export const PageReg = () => {
 
     const [reqstate, setReqstate] = useState(0);
 
-    return (        
+    return (
+        <div className="center-container">
+        <button onClick={onExitClick} className="exit">X</button>        
         <Form>        
             <h3>Регистрация</h3>
             <input placeholder='Имя' value={nameinp} onChange={(e) => {setNameinp(e.target.value)}}/>
@@ -40,12 +42,13 @@ export const PageReg = () => {
                 <input type='checkbox' className='checkbox' value={agreed} onChange={(e) => {setAgreed(e.target.checked); setReqstate(0)}} />
                 <p>By pressing Continue, you agree to the
                     <Link to='/terms'> Terms of Service</Link> and
-                    <Link to='/privacy'> Privacy Policy</Link>
-                </p>
-            </div>
-            <button onClick={(e) => {HandleClick(e)}}>{reqstate & (1 << 0) ? "Loading..." : "Register"}</button>
-        </Form>
-    );
+                <Link to='/privacy'> Privacy Policy</Link>
+            </p>
+        </div>
+        <button onClick={(e) => {HandleClick(e)}}>{reqstate & (1 << 0) ? "Loading..." : "Register"}</button>
+    </Form>
+    </div>
+);
 
     function CheckFields()
     {
