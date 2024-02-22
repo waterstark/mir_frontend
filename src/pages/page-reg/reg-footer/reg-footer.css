@@ -1,0 +1,40 @@
+@font-face {
+    font-family: Inter;
+    font-weight: 400;
+    src: url("../../../assets/fonts/Inter-Regular.ttf");
+}
+@font-face {
+    font-family: Sfui;
+    font-weight: 400;
+    src: url("../../../assets/fonts/sf_ui_text_regular.ttf");
+}
+.reg-footer{
+    background-color: #F5F5F5;
+    width: 100%;
+    height: 20%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+}
+.footer-button-goback, .footer-button-next{
+    font-size: 16px;
+    border: none;
+    display: block;
+    margin: 15px auto;
+    padding: 18px 16px 18px 16px;
+    line-height: 0;
+    cursor: pointer;
+}
+.footer-button-goback{
+    font-family: 'Inter';
+    background-color: #F5F5F5;
+}
+.footer-button-next{
+    font-family: 'Sfui';
+    font-weight: 700;
+    color: #FFFFFF;
+    width: 25%;
+    height: 47px;
+    background-color: #7653EB;
+    border-radius: 100px;
+}
