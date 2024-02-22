@@ -1,0 +1,351 @@
+@font-face {
+    font-family: Inter;
+    font-weight: 400;
+    src: url("../../../assets/fonts/Inter-Regular.ttf");
+}
+@font-face {
+font-family: Montserrat;
+font-weight: 500;
+src: url("../../../assets/fonts/Montserrat-Medium.ttf");
+}
+@font-face {
+font-family: Montserrat;
+font-weight: 600;
+src: url("../../../assets/fonts/Montserrat-SemiBold.ttf");
+}
+.form{
+    width: 25vw;
+    margin: 0 auto;
+}
+
+h1,h2,h3{
+    color: black;
+    font-family: 'Inter';
+}
+h1{
+    font-weight: 800;
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 8%;
+}
+h2{
+    font-weight: 800;
+    font-size: 16px;
+    text-align: left;
+    margin-bottom: 2%;
+    margin-top: 5%;
+}
+a{
+    font-weight: 800;
+    font-size: 16px;
+    text-align: left;
+    margin-bottom: 2%;
+    padding-left: 2%;
+}
+h3{
+    font-weight: 400;
+    font-size: 16px;
+    text-align: left;
+    margin-bottom: 6%;
+}
+
+.error{
+    font-family: 'Inter';
+    font-size: 14px;
+    color: red;
+}
+
+
+/* (1) FORM START STYLES */
+
+.react-international-phone-input-container{
+    width: 100%;
+    height: fit-content;
+    background-color: #F2F2F2;
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    margin-bottom: 15px;
+}
+
+.react-international-phone-input{
+    font-family: 'Inter';
+    font-size: 17px;
+    background: none;
+    border: 0;
+    width: 100%;
+    --react-international-phone-border-color: white;
+    --react-international-phone-background-color: #F2F2F2;
+    --react-international-phone-border-radius: 10px;
+    --react-international-phone-height: 45px;
+}
+
+.react-international-phone-country-selector{
+    --react-international-phone-border-radius: 10px;
+    --react-international-phone-country-selector-background-color: #F2F2F2;
+    --react-international-phone-country-selector-border-color: white;
+    height: 45px;
+}
+
+.react-international-phone-country-selector-button{
+    --react-international-phone-height: 45px;
+}
+
+.number-input :focus{
+    color: black;
+}
+
+.wrong-text-input {
+    width: 100%;
+    border-radius: 10px;
+    background: #F2F2F2;
+    border: 1px solid red;
+    font-size: 17px;
+    height: 45px;
+    margin-top: 1%;
+    padding-left: 15px;
+    margin-bottom: 5%;
+}
+
+hr{
+    margin-top: 5%;
+    margin-bottom: 3%;
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid #EEEEEE;
+}
+
+.continue-with{
+    display: flexbox;
+    align-items: center;
+    text-align:center;
+    position:relative;
+}
+
+.text-have-an-account, .link, .text-continue-with
+{
+    font-size: 14px;
+    text-align:center;
+    position:relative;
+    display: inline-block;
+}
+
+.text-have-an-account{
+    margin-top: 1%;
+}
+
+.link{
+    color:#7653EB;
+}
+
+.text-continue-with{
+    margin-top: 4%;
+    width: 100%;
+}
+
+.continue-with-button-container{
+    display: flex;
+    justify-content: center;
+    gap: 4%;
+    margin-top: 4%;
+    margin-bottom: 4%;
+}
+
+.continue-with-button{
+    border: none;
+    background-color: #F2F2F2;
+    width: 50%;
+    padding: 12px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.continue-with-button:hover{
+    background-color: #e2e2e2;
+}
+
+/*(2) FORM CODE STYLES*/
+
+.send-again {
+    margin: 4% auto 0 auto;
+    border: none;
+    background-color: white;
+    color: #7653EB;
+    cursor: pointer;
+    display: block;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+}
+
+/*(3) FORM INFO*/
+
+.text-input{
+    width: 100%;
+    border-radius: 10px;
+    background: #F2F2F2;
+    border: 0;
+    font-size: 17px;
+    height: 45px;
+    margin-top: 1%;
+    padding-left: 15px;
+}
+
+.input-holder{
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    width: 100%;
+    height: 45px;
+    border-radius: 10px;
+    background: #F2F2F2;
+    border: 0;
+    margin-top: 1%;
+}
+
+.input-with-svg{
+    width: 100%;
+    background: #F2F2F2;
+    border: 0;
+    border-radius: 10px;
+    font-size: 17px;
+    padding-left: 15px;
+}
+
+.icon-holder{
+    position: absolute;
+    border: none;
+    background-color: #F2F2F2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: 30px;
+    right: 5px;
+    top: 20%;
+}
+
+.birthday-input-container{
+    display: flex;
+    gap: 5%;
+}
+
+.radio-container{
+    gap: 2px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 4%;
+}
+
+img{
+    width: 25%;
+    height: 33%;
+}
+
+.image-container{
+    width: 100%;
+    display: flex;
+    gap: 14px;
+}
+
+/*(4) PROFILE OPTIONS*/
+
+.button-list {
+    display: inline-block;
+    width: 100%;
+  }
+  
+  .radio-button-label {
+    display: inline-block;
+    color: black;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 30px;
+    margin: 0 2% 2% 0;
+  }
+  
+  .radio-button-label input {
+    display: none;
+  }
+  
+  .radio-button-label:hover {
+    background-color: #e6e6e6; 
+  }
+
+  .radio-button-label input:checked + .button-text{
+    color: white;
+  }
+  
+  .button-text {
+    padding: 0 10px;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 14px;
+  }
+
+  /*(5) INTERESTS LIST*/
+
+.checkbox-input-holder{
+    width: 100%;
+    height: 88%;
+    position: relative;
+}
+
+.check-button{
+    display: inline-block;
+    position: absolute;
+    color: black;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 70px;
+    width: 100px;
+    height: 100px;
+}
+
+.check-button input{
+    display: none;
+}
+
+.check-button:hover{
+    background-color: #e6e6e6;
+}
+
+.check-button input:checked + .check-button-text{
+    color: white;
+}
+
+.check-button-text{
+    display: block;
+    margin-top: 20%;
+    text-align: center;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 18px;
+}
+
+/*(6)*/
+
+.location-form{
+    margin: 10% auto;
+    display: block;
+    width: 25%;
+    text-align: center;
+    font-family: 'Inter';
+}
+
+.loc-text{
+    font-size: 16px;
+}
+
+.enter-loc-button{
+    background-color: white;
+    border: none;
+    color: #7653EB;
+    font-family: 'Inter';
+    font-size: 16px;
+    margin-top: 4%;
+    cursor: pointer;
+}

@@ -1,0 +1,59 @@
+@font-face {
+    font-family: Inter;
+    font-weight: 400;
+    src: url("../../../assets/fonts/Inter-Regular.ttf");
+}
+@font-face {
+font-family: Montserrat;
+font-weight: 500;
+src: url("../../../assets/fonts/Montserrat-Medium.ttf");
+}
+@font-face {
+font-family: Montserrat;
+font-weight: 600;
+src: url("../../../assets/fonts/Montserrat-SemiBold.ttf");
+}
+.form{
+    width: 25%;
+    margin: 0 auto;
+}
+h1,h2,h3{
+    color: black;
+    font-family: 'Inter';
+}
+h1{
+    font-weight: 800;
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 8%;
+}
+h2{
+    font-weight: 800;
+    font-size: 16px;
+    text-align: left;
+    margin-bottom: 2%;
+}
+a{
+    font-weight: 800;
+    font-size: 16px;
+    text-align: left;
+    margin-bottom: 2%;
+    padding-left: 2%;
+}
+h3{
+    font-weight: 400;
+    font-size: 16px;
+    text-align: left;
+    margin-bottom: 6%;
+}
+.text-input{
+    width: 100%;
+    border-radius: 10px;
+    background: #F2F2F2;
+    border: 0;
+    font-size: 17px;
+    height: 45px;
+    margin-top: 1%;
+    padding-left: 15px;
+    margin-bottom: 5%;
+}

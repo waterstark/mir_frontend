@@ -1,0 +1,151 @@
+*{
+    color: black;   
+}
+.page-main{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+}
+.app-container{
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    width: 93%;
+    height: 75%;
+    background-color: transparent;
+}
+.app-chat, .app-pfp, .app-bio{
+    border-radius: 20px;
+    height: 100%;
+}
+.app-chat{
+    width: 34%;
+    overflow: hidden;
+}
+.app-pfp{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 28%;
+    background-image: url(2640.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.app-bio{
+    width: 34%;
+    border-radius: 20px;
+    background: linear-gradient(91deg, rgba(255, 255, 255, 0.73) 0.31%, rgba(223, 223, 223, 0.73) 97.15%);
+    backdrop-filter: blur(12.5px);
+}
+.app-chat-bar{
+    border-radius: 20px;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    background: linear-gradient(91deg, rgba(255, 255, 255, 0.73) 0.31%, rgba(235, 235, 235, 0.73) 97.15%);
+    backdrop-filter: blur(12.5px);
+    display: flex;
+    flex-direction: column;
+}
+.app-chat-content{
+    transform: translate(100%, -100%);
+    transition: 0.2s;
+    margin-right: 0;
+    margin-left: auto;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    width: 82%;
+    height: 100%;
+    background-color: aliceblue;
+}
+.app-chat-content.open{
+    transform: translate(0, -100%)
+}
+.app-chat-bar-messages, .app-chat-bar-likes{
+    margin-top: 20px;
+    margin-left: 14px;
+    width: 92%;
+    height: 56px;
+}
+.bio-info{
+    margin: 20px;
+}
+.bio-header{
+    display: flex;
+    margin-bottom: 0;
+}
+.bio-age{
+    margin-left: 6px;
+    font-weight: 400;
+}
+.bio-name, .bio-age{
+    margin-bottom: 16px;
+}
+.bio-name{
+    font-weight: 800px
+}
+.bio-info > p{
+    font-size: 14px;
+    margin-bottom: 16px;
+}
+.bio-info > h2{
+    margin-bottom: 8px;
+}
+.bio-item-list{
+    border-radius: 53px;
+    background: rgba(255, 255, 255, 0.60);
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    padding-bottom: 2px;
+    padding-top: 2px;
+    width: fit-content;
+    height: 22px;
+    margin-bottom: 16px;
+}
+.pfp-icons{
+    margin-bottom: 24px;
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+    align-items: center;
+}
+.chat-item{
+    display: flex;
+    align-items: center;
+}
+.chat-item-image{
+    width: 18%;
+    aspect-ratio: 1 / 1;
+    background-image: url('./Frame 12290.png');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.chat-content-header{
+    display: flex;
+    align-items: center;
+}
+.chat-message-box{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    bottom: 0;
+}
+.chat-message-input{
+    padding-left: 10px;
+    margin: 24px;
+    width: 100%;
+    height: 36px;
+    border-radius: 8px;
+    border: 0px solid var(--2, #FFF);
+    background: var(--Input, #F2F2F2);
+}
